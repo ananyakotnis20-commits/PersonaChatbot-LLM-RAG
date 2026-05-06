@@ -1,0 +1,121 @@
+{
+  "habits": {
+    "sleep": [],
+    "food": [
+      "enjoy hearty stew",
+      "like steak",
+      "ate burritos",
+      "like coffee",
+      "enjoy juggling"
+    ],
+    "exercise": [
+      "hiking",
+      "run",
+      "skateboard",
+      "play bass guitar",
+      "play sports (inferred from interest in archery)",
+      "exercise",
+      "rock climbing",
+      "welding"
+    ],
+    "work": [],
+    "hobbies": [
+      "playing in a band",
+      "writing",
+      "hiking",
+      "listening to music",
+      "reading books",
+      "watching documentaries",
+      "juggling",
+      "treat mom to favorite food",
+      "play bass guitar",
+      "garden",
+      "like gardening",
+      "practice yoga and meditation",
+      "write",
+      "play guitar",
+      "learning about family history",
+      "cosplaying",
+      "reading novels",
+      "rock climbing",
+      "welding"
+    ],
+    "other": []
+  },
+  "personal_facts": {
+    "occupation": "fulltime student studying radiology",
+    "location": null,
+    "family": [
+      "parents (mentioned in a negative context, hiding information from them)",
+      "mom",
+      "getting married"
+    ],
+    "relationships": [
+      "getting married"
+    ],
+    "life_events": [
+      "widow",
+      "divorce",
+      "lost a loved one"
+    ],
+    "interests": [
+      "camping",
+      "stargazing",
+      "animal rights",
+      "music",
+      "Christmas decoration",
+      "curls hair",
+      "learn to play guitar",
+      "learning about charities",
+      "reading about life experiences of others"
+    ]
+  },
+  "personality_traits": [
+    "conceals personal information from parents",
+    "enjoys music",
+    "optimistic",
+    "supportive",
+    "inquisitive",
+    "enthusiastic"
+  ],
+  "communication_style": {
+    "tone": "casual",
+    "message_length": "short",
+    "emoji_usage": null,
+    "humour": null,
+    "formality": "informal",
+    "notable_patterns": [
+      "expresses enthusiasm about various activities",
+      "asks follow-up questions",
+      "likes to share personal interests",
+      "asks questions",
+      "shows enthusiasm and excitement",
+      "expresses empathy and sympathy"
+    ]
+  },
+  "evidence_quotes": [
+    "I really love writing but it's hard to find the time!",
+    "That's great!",
+    "I like to go hiking and stargaze.",
+    "I love relaxing with my dog and listening to some music.",
+    "That sounds really nice!",
+    "What do you like to do for fun?",
+    "That sounds like a great hobby!",
+    "Wow, that's really cool!",
+    "Me too, I'm gonna relax with my cats.",
+    "I like to decorate Christmas trees.",
+    "What do you like to do for fun?",
+    "I'm going to treat my mom to her favorite fast food on this weekend as a celebration of her recovery from cancer.",
+    "I'm from Chicago, and I enjoy juggling, reading books, and watching documentaries.",
+    "Hello! I'm glad to meet you. What are your hobbies?",
+    "I'm doing great, thanks! I'm just watching some sports.",
+    "Hello! I am interested in learning more about you.",
+    "Hello! I am a huge fan of classic cars.",
+    "What do you like to do for fun?",
+    "Congratulations! What are you planning on doing after graduation? I'm just glad we got a chance to talk."
+  ],
+  "_meta": {
+    "source_summaries": 736,
+    "extraction_model": "llama-3.1-8b-instant"
+  }
+}
