@@ -142,6 +142,7 @@ curl -X POST http://localhost:5000/ask \
 
 ---
 
+
 ## Example questions to ask
 
 - *"What kind of person is this user?"*
@@ -178,5 +179,26 @@ curl -X POST http://localhost:5000/ask \
 | `vector_store/chunks_meta.pkl` | Metadata for raw chunks |
 | `persona.json` | Extracted user persona (habits, traits, etc.) |
 
+
+On-device (phone/laptop):
+  SQLite memory.db    ← raw messages, FTS5 index, valence scores
+  FAISS chunks.index  ← vector embeddings (not synced — rebuilt locally)
+  models/minilm/      ← MiniLM weights (never synced — too large)
+  persona.json        ← current persona state (syncs to cloud)
+
+Cloud sync:
+  persona.json        ← synced on every session end (small, ~2 KB)
+  topic summaries     ← synced after ingestion (text only, ~50 KB)
+  
+  NOT synced:
+  Raw message text    ← privacy: stays on device only
+  FAISS index         ← rebuilt from synced summaries if new device
+  MiniLM weights      ← re-downloaded from HuggingFace on new device
+
+Conflict resolution:
+  persona.json  → last-write-wins using ISO timestamp in file
+  summaries     → append-only; no conflicts possible
+  FAISS index   → always rebuilt from source — no merge needed
+  
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
